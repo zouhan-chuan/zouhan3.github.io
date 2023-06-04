@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>首页</title>
+  </head>
+  <style>
+    /*主体的样式 */
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(./img/background.jpg);
+      /* 背景位置 */
+      background-position: center center;
+      /* 背景不平铺 */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /* flex布局 */
+    nav {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      width: 80%;
+      text-align: center;
+      font-size: 24px;
+    }
+    nav a {
+      display: block;
+      width: 160px;
+    }
+    main {
+      margin: 12px 48px;
+      display: flex;
+      justify-content: space-around;
+    }
+    main aside {
+      height: 600px;
+      width: 240px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    /* flex布局 */
+    .main {
+      /* calc动态设置 */
+      width: calc(100% - 280px);
+      height: 600px;
+      background: rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+    }
+    /* 
+    text-align: center;水平居中
+      height: 35px;
+      line-height: 35px;垂直居中
+     */
+    aside ul li {
+      text-align: center;
+      height: 35px;
+      line-height: 35px;
+      margin: 48px 28px 0px 0px;
+      border-radius: 12px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .top1 {
+      width: 100%;
+      display: flex;
+    }
+    .top1_box {
+      margin-left: 66px;
+      width: 300px;
+      height: 400px;
+      background-color: rgb(0, 0, 0, 0.4);
+      border-radius: 12px;
+    }
+    .top1_box img {
+      width: 300px;
+      border-radius: 12px;
+    }
+    .text {
+      color: aliceblue;
+      text-indent: 24px;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <!-- herf引入不同的页面 -->
+          <a href="./index.html">主页</a>
+          <a href="./hobby.html">兴趣</a>
+          <a href="./message.html">留言</a>
+          <a href="./resume.html">简历</a>
+        </nav>
+        <!-- 建立左侧导航栏 -->
+        <main>
+          <aside>
+            <!-- 列出导航栏的每一个元素 -->
+            <ul>
+              <li class="top1_li">我的生活</li>
+              <li class="top2_li">我的日常</li>
+              <li class="top3_li">我的旅拍</li>
+              <li class="top4_li">我的校园</li>
+            </ul>
+          </aside>
+          <div class="main">
+            <div class="top1">
+              <div class="top1_box">
+                <!-- src引入图片路径 -->
+                <img src="https://userblink.csdnimg.cn/20230604/m0_62706377/pic/fb9d9d92045a1bc5c75e8431c57e32f7-8.png?x-oss-process=image/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QG0wXzYyNzA2Mzc3,color_FFFFFF,size_24,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" alt="" />
+                <p class="text">
+                  在火车轨道上的天桥感受大自然的风
+                </p>
+              </div>
+              <div class="top1_box">
+                <img src="./img/生活2.jpeg" alt="" />
+                <p class="text">
+                  给朋友们过生日的聚餐合拍
+                </p>
+              </div>
+              <div class="top1_box">
+                <img src="./img/生活3.jpeg" alt="" />
+                <p class="text">
+                  闲暇生活的碎片
+                </p>
+              </div>
+            </div>
+            <!-- 个人照片设置 -->
+            <div class="top2" style="display: none">
+              <div class="top1_box">
+                <img src="https://userblink.csdnimg.cn/20230604/m0_62706377/pic/15a796ce259403a0cd9ba841168cfa7d-1.png?x-oss-process=image/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QG0wXzYyNzA2Mzc3,color_FFFFFF,size_24,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" alt="" />
+                <p class="text">最好吃的烧烤</p>
+              </div>
+              <div class="top1_box">
+                <img src="https://userblink.csdnimg.cn/20230604/m0_62706377/pic/afc8ffd1e98bac4dba8378eed4530e29-6.png?x-oss-process=image/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QG0wXzYyNzA2Mzc3,color_FFFFFF,size_24,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" alt="" />
+                <p class="text">最难学的课程</p>
+              </div>
+              <div class="top1_box">
+                <img src="https://userblink.csdnimg.cn/20230604/m0_62706377/pic/026aef86cdf1bd7cbfd3253790f1e27f-7.png?x-oss-process=image/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QG0wXzYyNzA2Mzc3,color_FFFFFF,size_24,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" alt="" />
+                <p class="text">最好看的电影</p>
+              </div>
+            </div>
+            <div class="top3" style="display: none">
+              <div class="top1_box">
+                <img src="./img/旅游1.jpeg" alt="" />
+                <p class="text">在首义校史馆瞻仰前辈</p>
+              </div>
+              <div class="top1_box">
+                <img src="./img/旅游2.jpeg" alt="" />
+                <p class="text">参观武昌蛇山烈士祠堂</p>
+              </div>
+              <div class="top1_box">
+                <img src="./img/旅游3.jpeg" alt="" />
+                <p class="text">在陕西感受人文气息</p>
+              </div>
+            </div>
+            <div class="top4" style="display: none">
+              <div class="top1_box">
+                <img src="https://userblink.csdnimg.cn/20230604/m0_62706377/pic/d2c363563a5a0f2469c8794e42ac663e-5.png?x-oss-process=image/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QG0wXzYyNzA2Mzc3,color_FFFFFF,size_24,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" alt="" />
+                <p class="text">忙碌生活中的片刻停留</p>
+              </div>
+              <div class="top1_box">
+                <img src="https://userblink.csdnimg.cn/20230604/m0_62706377/pic/499409e7c49cc1a194c471e7f608198d-4.png?x-oss-process=image/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjg=,text_QG0wXzYyNzA2Mzc3,color_FFFFFF,size_30,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" alt="" />
+                <p class="text">环湖绿道旁落日下的宁静</p>
+              </div>
+              <div class="top1_box">
+                <img src="https://userblink.csdnimg.cn/20230604/m0_62706377/pic/b2f3c3e7d298ff42ff058b7b160353ba-2.png?x-oss-process=image/watermark,image_bG9nby9sb2dvM3gucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLGhfMjI=,text_QG0wXzYyNzA2Mzc3,color_FFFFFF,size_24,type_ZmFuZ3poZW5naGVpdGk,shadow_20,t_50,g_se,x_16,y_16,order_0,align_2,interval_4" alt="" />
+                <p class="text">清晨八点人流最密集的地方</p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer></footer>
+      </header>
+    </div>
+  </body>
+</html>
+<script>
+  const top1_li = document.querySelector('.top1_li');
+  const top2_li = document.querySelector('.top2_li');
+  const top3_li = document.querySelector('.top3_li');
+  const top4_li = document.querySelector('.top4_li');
+  const top1 = document.querySelector('.top1');
+  const top2 = document.querySelector('.top2');
+  const top3 = document.querySelector('.top3');
+  const top4 = document.querySelector('.top4');
+  const arr = [top1_li, top2_li, top3_li, top4_li];
+  const topArr = [top1, top2, top3, top4];
+  // 双层循环，根据下标判断是否显示元素
+  arr.forEach((item, index) => {
+    item.onclick = () => {
+      topArr.forEach((topItem) => {
+        topItem.style.display = 'none';
+      });
+      topArr[index].style.display = 'flex';
+    };
+  });
+</script>
